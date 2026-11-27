@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="pt" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Detalhes da Tarefa - TaskMaster</title>
+</head>
+<body>
+    <h1>Detalhes da Tarefa</h1>
+
+    <p><strong>ID:</strong> <span th:text="${tarefa.id}">1</span></p>
+    <p><strong>Título:</strong> <span th:text="${tarefa.titulo}">Título</span></p>
+    <p><strong>Descrição:</strong> <span th:text="${tarefa.descricao}">Descrição</span></p>
+    <p><strong>Status:</strong> <span th:text="${tarefa.status}">PENDENTE</span></p>
+
+    <p><a th:href="@{/tarefas}">Voltar para a lista</a></p>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Tarefas - TaskMaster</title>
+</head>
+<body>
+    <h1>Lista de Tarefas</h1>
+
+    <table border="1" cellpadding="8" cellspacing="0">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Título</th>
+                <th>Status</th>
+                <th>Ações</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr th:each="tarefa : ${tarefas}">
+                <td th:text="${tarefa.id}">1</td>
+                <td th:text="${tarefa.titulo}">Título</td>
+                <td th:text="${tarefa.status}">PENDENTE</td>
+                <td>
+                    <a th:href="@{/tarefas/{id}(id=${tarefa.id})}">Ver detalhes</a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
