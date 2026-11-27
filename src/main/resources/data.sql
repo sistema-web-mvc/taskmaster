@@ -1,0 +1,1 @@
+INSERT INTO tarefa (titulo, descricao, status) VALUES ('Configurar projeto Spring Boot', 'Criar estrutura MVC e conectar banco H2', 'CONCLUIDA'), ('Implementar listagem de tarefas', 'Criar Repository com JdbcTemplate, Service e Controller', 'EM_ANDAMENTO'), ('Criar tela de detalhes', 'Exibir dados completos de uma tarefa selecionada', 'PENDENTE');
